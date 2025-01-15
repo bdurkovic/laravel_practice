@@ -10350,3 +10350,19 @@ Did you mean one of these?
 #25 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
 #26 {main}
 "} 
+[2025-01-14 13:43:01] local.ERROR: There are no commands defined in the "routes" namespace.
+
+Did you mean this?
+    route {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"routes\" namespace.
+
+Did you mean this?
+    route at /development/b.durkovic/laravel_practice/example/vendor/symfony/console/Application.php:636)
+[stacktrace]
+#0 /development/b.durkovic/laravel_practice/example/vendor/symfony/console/Application.php(685): Symfony\\Component\\Console\\Application->findNamespace()
+#1 /development/b.durkovic/laravel_practice/example/vendor/symfony/console/Application.php(258): Symfony\\Component\\Console\\Application->find()
+#2 /development/b.durkovic/laravel_practice/example/vendor/symfony/console/Application.php(167): Symfony\\Component\\Console\\Application->doRun()
+#3 /development/b.durkovic/laravel_practice/example/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(197): Symfony\\Component\\Console\\Application->run()
+#4 /development/b.durkovic/laravel_practice/example/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1205): Illuminate\\Foundation\\Console\\Kernel->handle()
+#5 /development/b.durkovic/laravel_practice/example/artisan(13): Illuminate\\Foundation\\Application->handleCommand()
+#6 {main}
+"} 
