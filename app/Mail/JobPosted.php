@@ -2,6 +2,7 @@
 
 namespace App\Mail;
 
+use App\Models\Job;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
@@ -16,7 +17,7 @@ class JobPosted extends Mailable
     /**
      * Create a new message instance.
      */
-    public function __construct()
+    public function __construct(public Job $job)
     {
         //
     }
@@ -27,6 +28,7 @@ class JobPosted extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
+            from: 'admin@laracasts.com',
             subject: 'Job Posted',
         );
     }
